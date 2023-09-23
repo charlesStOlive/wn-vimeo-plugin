@@ -1,0 +1,40 @@
+fields:
+    title:
+        type: text
+        placeholder: backend::lang.fileupload.title_label
+        span: full
+    description:
+        type: textarea
+        placeholder: backend::lang.fileupload.description_label
+        span: full
+        size: tiny
+    # api_opts[tags]:
+    #     label: Sous titre
+    #     type: taglist
+    #     mode: array 
+    #     options: 
+    #         - Présentation enfant
+    #         - Salutation 
+    #         - Présentation programme
+    
+secondaryTabs:
+    fields:
+        api_opts[subtitles]:
+            type: repeater
+            prompt: Ajouter un sous titre
+            tab: Sous titre
+            form:
+                fields:
+                    start:
+                        label: Start 
+                        span: left
+                    end: 
+                        label: end 
+                        span: right 
+                    text: 
+                        label: Text 
+    
+        
+
+                
+              

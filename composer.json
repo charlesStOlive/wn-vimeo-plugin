@@ -1,0 +1,15 @@
+{
+    "name": "waka/wn-vimeo-plugin",
+    "description": "Plugin pour viméo",
+    "type": "winter-plugin",
+    "require": {
+        "vimeo/vimeo-api": "^3.0.10"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Charles Saint Olive",
+            "email": "contact@notilac.fr"
+        }
+    ]
+}
