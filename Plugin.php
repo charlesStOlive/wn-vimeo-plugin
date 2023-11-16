@@ -34,34 +34,6 @@ class Plugin extends PluginBase
         Config::set('vimeo', $registeredAppPathConfig);
     }
 
-    /**
-     * Boot method, called right before the request route.
-     */
-    public function boot(): void
-    {
-
-    }
-
-    /**
-     * Registers any frontend components implemented in this plugin.
-     */
-    public function registerComponents(): array
-    {
-        return []; // Remove this line to activate
-
-        return [
-            'Waka\Vimeo\Components\MyComponent' => 'myComponent',
-        ];
-    }
-
-    /**
-     * Registers any backend permissions used by this plugin.
-     */
-    public function registerPermissions(): array
-    {
-        return []; // Remove this line to activate
-    }
-
     public function registerFormWidgets(): array
     {
         return [
@@ -69,21 +41,4 @@ class Plugin extends PluginBase
         ];
     }
 
-    /**
-     * Registers backend navigation items for this plugin.
-     */
-    public function registerNavigation(): array
-    {
-        return []; // Remove this line to activate
-
-        return [
-            'vimeo' => [
-                'label'       => 'waka.vimeo::lang.plugin.name',
-                'url'         => Backend::url('waka/vimeo/mycontroller'),
-                'icon'        => 'icon-leaf',
-                'permissions' => ['waka.vimeo.*'],
-                'order'       => 500,
-            ],
-        ];
-    }
 }
