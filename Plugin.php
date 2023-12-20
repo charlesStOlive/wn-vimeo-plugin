@@ -34,11 +34,6 @@ class Plugin extends PluginBase
         Config::set('vimeo', $registeredAppPathConfig);
     }
 
-    public function registerFormWidgets(): array
-    {
-        return [
-            'Waka\Vimeo\FormWidgets\VimeoUploader' => 'vimeouploader',
-        ];
-    }
+    
 
 }
